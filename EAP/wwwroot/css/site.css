@@ -1,22 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+/* === Estilos para tela === */
+.dark-mode-fundo {
+    background-color: #3c4043
+}
+/* === END Estilos para tela END === */
+
 html {
-  font-size: 14px;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
 }
+
+/* === Estilos para NavBar === */
+.lateral-navbar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: #333;
+    padding-top: 20px;
+    transition: left 0.5s;
+    z-index: 2;
+}
+    .lateral-navbar a {
+        padding: 15px;
+        text-decoration: none;
+        font-size: 23px;
+        color: white;
+        display: block;
+        transition: padding 0.3s;
+        color: white !important;
+        margin-top: 25px;
+        font-weight: bold;
+    }
+.lateral-navbar a:hover {
+    padding-right: 25px;
+}
+
+#openLatNav {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.navbar a {
+    color: white !important;
+}
+.nav-item a {
+    color: white !important;
+}
+
+#CreateP {
+    background-color: #fdb709;
+}
+/* === END Estilos para NavBar END === */
