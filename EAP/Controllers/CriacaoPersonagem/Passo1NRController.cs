@@ -6,7 +6,7 @@ namespace EAP.Controllers.CriacaoPersonagem
     {
         public IActionResult Index()
         {
-            return View("../Pages/CriacaoPersonagem/Passo1NR");
+            return View("../CriacaoPersonagem/Passo1NR");
         }
     }
 }
