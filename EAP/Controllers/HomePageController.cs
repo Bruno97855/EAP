@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace EAP.Controller
+namespace EAP.Controllers
 {
     public class HomePageController : Controller
     {
         public IActionResult Index()
         {
-            return View();
+            return View("../Pages/Index");
         }
     }
 }
