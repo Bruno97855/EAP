@@ -12,9 +12,9 @@ namespace EAP.Controllers.CriacaoPersonagem
 
             ViewBag.ItemList = new List<SelectListItem>
                  {
-                new SelectListItem { Value = "1", Text = "Item 1" },
-                new SelectListItem { Value = "2", Text = "Item 2" },
-                new SelectListItem { Value = "3", Text = "Item 3" },
+                new SelectListItem { Value = "1", Text = "Texto Grande 111 222 333 444 555 666 777 888 999 111" },
+                new SelectListItem { Value = "2", Text = "Texto Médio 11 22 33 44 55" },
+                new SelectListItem { Value = "3", Text = "texto pequeno" },
             };
 
             return View(model);

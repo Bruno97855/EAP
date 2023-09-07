@@ -1,6 +1,5 @@
 
-/*@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 
 /* === Estilos para tela === */
 .dark-mode-fundo {
@@ -11,6 +10,7 @@
 html {
     font-size: 14px;
     font-family: 'Josefin Sans', sans-serif;
+    
 }
 
 @media (min-width: 768px) {
@@ -86,15 +86,16 @@ body {
 
 /* Estilos padrão para TextBox */
 input[type="text"] {
-    width: 200px;
-    height: 33px;
+    min-width: 200px;
+    height: 37px;
     padding: 10px;
     font-size: 16px;
-    color: black;
+    color: #000;
     border-radius: 13px;
-    outline:none;
+    outline: none;
     border: none;
     margin: 2px;
+    background-color: #ffffff;
 }
 
 /* Estilos padrão para Label */
@@ -103,42 +104,62 @@ label{
 }
 
 /* Estilos padrão para DropDownList */
-.custom-dropdown-toggle {
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    border: 1px solid #007bff; /* Borda do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    cursor: pointer; /* Mostrar um cursor de apontador ao passar o mouse */
+.custom-dropdown {
 }
+
+.custom-dropdown-toggle {
+    width: 200px;
+    height: 37px;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 13px 13px 13px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    content: '';
+    background-image: url('../icons/chevron-down-solid.svg');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+}
+
+    .custom-dropdown-toggle::after {
+        
+    }
 
 /* Estilo para o menu suspenso */
 .custom-dropdown-menu {
-    display: none; /* Ocultar o menu por padrão */
+    display: none; 
     position: absolute;
-    background-color: #fff; /* Cor de fundo do menu */
-    border: 1px solid #ccc; /* Borda do menu */
+    background-color: #ffffff; 
+    border: none;
     padding: 0;
     margin: 0;
     list-style-type: none;
+    border-radius: 0px 0px 13px 13px;
 }
 
     /* Estilo para os itens do menu suspenso */
     .custom-dropdown-menu li {
-        padding: 10px; /* Espaçamento interno dos itens */
-        border-bottom: 1px solid #ccc; /* Borda inferior dos itens */
+        padding: 10px; 
+        border-top: 1px solid #ccc;
     }
 
         /* Estilo para os links dos itens do menu suspenso */
         .custom-dropdown-menu li a {
-            text-decoration: none; /* Remover sublinhado dos links */
-            color: #333; /* Cor do texto dos links */
-            display: block; /* Fazer os links ocuparem todo o espaço do item */
+            text-decoration: none; 
+            color: #333; 
+            display: block; 
         }
 
             /* Estilo para os links dos itens do menu suspenso quando hover (passar o mouse) */
             .custom-dropdown-menu li a:hover {
-                background-color: #007bff; /* Cor de fundo quando hover */
-                color: #fff; /* Cor do texto quando hover */
+                background-color: none; 
+                color: #000; 
             }
 
 /* === END Estilos padrão para componentes de interface END === */
