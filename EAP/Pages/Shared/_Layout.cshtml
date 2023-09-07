@@ -1,10 +1,13 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    @using EAP.Components
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - EAP</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/EAP.styles.css" asp-append-version="true" />
 </head>
@@ -30,11 +33,12 @@
             </div>
         </nav>
     </header>
+
     <div id="openLatNav" onclick="openLatNav()">
         &#9776;
     </div>
     <div class="lateral-navbar" id="latNavbar">
-        <a id="CreateP" href="../CreatePersona">Criar Personagem</a>
+        <a id="CreateP" href="/Teste">Criar Personagem</a>
     </div>
     <div class="container" id="main">
         <main role="main" class="pb-3">
