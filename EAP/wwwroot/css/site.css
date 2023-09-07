@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
 
 /* === Estilos para tela === */
 .dark-mode-fundo {
@@ -10,7 +11,6 @@
 html {
     font-size: 14px;
     font-family: 'Josefin Sans', sans-serif;
-    
 }
 
 @media (min-width: 768px) {
@@ -81,3 +81,64 @@ body {
     background-color: #fdb709;
 }
 /* === END Estilos para NavBar END === */
+
+/* === Estilos padrão para componentes de interface === */
+
+/* Estilos padrão para TextBox */
+input[type="text"] {
+    width: 200px;
+    height: 33px;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    border-radius: 13px;
+    outline:none;
+    border: none;
+    margin: 2px;
+}
+
+/* Estilos padrão para Label */
+label{
+
+}
+
+/* Estilos padrão para DropDownList */
+.custom-dropdown-toggle {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: 1px solid #007bff; /* Borda do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Mostrar um cursor de apontador ao passar o mouse */
+}
+
+/* Estilo para o menu suspenso */
+.custom-dropdown-menu {
+    display: none; /* Ocultar o menu por padrão */
+    position: absolute;
+    background-color: #fff; /* Cor de fundo do menu */
+    border: 1px solid #ccc; /* Borda do menu */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+    /* Estilo para os itens do menu suspenso */
+    .custom-dropdown-menu li {
+        padding: 10px; /* Espaçamento interno dos itens */
+        border-bottom: 1px solid #ccc; /* Borda inferior dos itens */
+    }
+
+        /* Estilo para os links dos itens do menu suspenso */
+        .custom-dropdown-menu li a {
+            text-decoration: none; /* Remover sublinhado dos links */
+            color: #333; /* Cor do texto dos links */
+            display: block; /* Fazer os links ocuparem todo o espaço do item */
+        }
+
+            /* Estilo para os links dos itens do menu suspenso quando hover (passar o mouse) */
+            .custom-dropdown-menu li a:hover {
+                background-color: #007bff; /* Cor de fundo quando hover */
+                color: #fff; /* Cor do texto quando hover */
+            }
+
+/* === END Estilos padrão para componentes de interface END === */
