@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "_Layout";
+}
+@using EAP.Models
+@model TesteModel
+
+<div>
+    <div>
+        @Html.Label("Label", "Nome da Label")
+    </div>
+    <div>
+        @Html.TextBox("NomeTextBox", Model.TextBox)
+    </div>
+    <div>
+        @Html.DropDownListEAP(model => model.DropDownList,(List<SelectListItem>)ViewBag.ItemList, "Selecione uma opção", new { @class = "form-control" })
+    </div>
+</div>
