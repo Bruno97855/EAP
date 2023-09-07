@@ -44,7 +44,7 @@ body {
     right: -250px;
     background-color: #333;
     padding-top: 20px;
-    transition: left 0.5s;
+    transition: right 0.5s ease-in-out;
     z-index: 2;
 }
     .lateral-navbar a {
@@ -82,9 +82,9 @@ body {
 }
 /* === END Estilos para NavBar END === */
 
-/* === Estilos padrão para componentes de interface === */
+/* === Estilos padrï¿½o para componentes de interface === */
 
-/* Estilos padrão para TextBox */
+/* Estilos padrï¿½o para TextBox */
 input[type="text"] {
     min-width: 200px;
     height: 37px;
@@ -98,12 +98,12 @@ input[type="text"] {
     background-color: #ffffff;
 }
 
-/* Estilos padrão para Label */
+/* Estilos padrï¿½o para Label */
 label{
 
 }
 
-/* Estilos padrão para DropDownList */
+/* Estilos padrï¿½o para DropDownList */
 .custom-dropdown {
 }
 
@@ -162,4 +162,4 @@ label{
                 color: #000; 
             }
 
-/* === END Estilos padrão para componentes de interface END === */
+/* === END Estilos padrï¿½o para componentes de interface END === */
