@@ -1,4 +1,13 @@
+using EAP.Models;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(builder.Environment.ContentRootPath)
+    .AddJsonFile("appsettings.json")
+    .Build();
+
+builder.Services.Configure<AppSettings>(configuration.GetSection("AppSettings"));
 
 // Add services to the container.
 builder.Services.AddRazorPages();

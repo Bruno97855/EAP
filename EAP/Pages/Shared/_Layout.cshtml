@@ -1,8 +1,13 @@
-﻿
+﻿@using Microsoft.Extensions.Options
+@using EAP.Models
+@{
+    var appSettings = Context.RequestServices.GetRequiredService<IOptions<AppSettings>>().Value;
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @using EAP.Components
+    @using EAP.Components;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - EAP</title>
@@ -48,8 +53,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container text-white">
-            &copy; 2023 - EAP - <a asp-area="" asp-page="/Privacy">Privacy</a>
-            <p>@Model.SiteVersion</p>
+            &copy; 2023 - EAP - <a asp-area="" asp-page="/Privacy">Privacy</a> - @appSettings.SiteVersion
         </div>
     </footer>
 
