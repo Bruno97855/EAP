@@ -99,8 +99,8 @@ input[type="text"] {
 }
 
 /* Estilos padr�o para Label */
-label{
-
+label {
+    margin-bottom: 0px !important;
 }
 
 /* Estilos padr�o para DropDownList */
